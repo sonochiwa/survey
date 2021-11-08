@@ -11,6 +11,8 @@ button::-moz-focus-inner {
     border: none;
     border-radius: 25px;
     background-color: rgb(245, 245, 245);
+    min-width: 100%;
+    max-width: 500px;
 }
 
 .card-img-top {
@@ -20,8 +22,19 @@ button::-moz-focus-inner {
 .container__inner {
     display: flex;
     width: 100%;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+/* 
+#app {
+    display: flex;
+}
+
+#app2 {
+    display: flex;
+} */
 
 .card-wrapper {
     display: flex;
@@ -29,7 +42,7 @@ button::-moz-focus-inner {
 }
 
 .card-spec-text p {
-    min-width: 400px;
+    min-width: 300px;
     max-width: 400px;
     margin: 0 1rem 1rem 1rem;
     /* text-align: center; */
@@ -43,6 +56,11 @@ button::-moz-focus-inner {
     font-size: 16px;
     width: 100%;
     margin-top: 10px;
+}
+
+.simp-btn_show {
+    /* text-align: center; */
+    width: 100%;
 }
 
 .btn-true {
@@ -60,4 +78,84 @@ button::-moz-focus-inner {
 .disabled {
     opacity: 30%;
     cursor: default;
+}
+
+.show-form {
+    padding-bottom: 30px;
+    margin: auto 0;
+    align-items: center;
+}
+
+.show-p {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.header {
+    background-color: rgb(231, 231, 231);
+    line-height: 60px;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 35px;
+    white-space: nowrap;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li+li {
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    max-width: 100%;
+}
+
+.error-h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+@media (max-width: 770px) {
+    .logo {
+        display: none;
+    }
+    ul {
+        justify-content: center;
+    }
+    li+li {
+        margin-left: 15px;
+    }
 }

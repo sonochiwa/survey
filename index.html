@@ -11,55 +11,129 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">ТЕСТ ПО ЛИНУКС
+                </div>
+                <nav>
+                    <ul>
+
+                        <li><a href="error.html">Другие тесты</a></li>
+                        <li>
+                            <a href="error.html">Обратная связь</a>
+                        </li>
+                        <li>
+                            <a href="error.html">Вход</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <div class="container mt-3">
         <div class="container__inner">
             <div id="app">
-
                 <h5>Вопрос 1</h5>
                 <div class="card-wrapper">
-                    <div class="card mb-3" style="width: 18rem;">
-                        <img src="images/img1.png" class="card-img-top" alt="img1">
+                    <div class="card mb-3">
+                        <img src="images/img1.png" class="card-img-top" alt="img">
                         <div class="card-body">
-                            <h5 class="card-title">какой ты гуль?</h5>
-                            <button @click="btnTrue" class="simp-btn">позер</button>
-                            <button @click="btnFalse" class="simp-btn">sss</button>
-                            <button @click="btnFalse" class="simp-btn">кофеед</button>
+                            <h5 class="card-title">Что такое виртуальная машина?</h5>
+                            <button @click="btnFalse" class="simp-btn">Среда выполнения Linux</button>
+                            <button @click="btnTrue" class="simp-btn">Виртуальная среда для запуска разных ОС на вашем ПК </button>
+                            <button @click="btnFalse" class="simp-btn">Популярная онлайн видеоигра</button>
                         </div>
-                    </div>
-
-                    <div class="card-spec-text">
-                        <p>zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc
-                            zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc
-                            zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc
-                            zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc
-                            zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc</p>
                     </div>
                 </div>
 
                 <h5>Вопрос 2</h5>
                 <div class="card-wrapper">
-                    <div class="card mb-3" style="width: 18rem;">
-                        <img src="images/img1.png" class="card-img-top" alt="img1">
+                    <div class="card mb-3">
+                        <img src="images/img2.png" class="card-img-top" alt="img">
                         <div class="card-body">
-                            <h5 class="card-title">какой ты гуль?</h5>
-                            <button @click="btnTrue" class="simp-btn">позер</button>
-                            <button @click="btnFalse" class="simp-btn">sss</button>
-                            <button @click="btnFalse" class="simp-btn">кофеед</button>
+                            <h5 class="card-title">Что есть в каждой Linux?</h5>
+                            <button @click="btnFalse" class="simp-btn">Большой набор графических функций</button>
+                            <button @click="btnFalse" class="simp-btn">Отличный дизайн операционной системы</button>
+                            <button @click="btnTrue" class="simp-btn">Терминал </button>
                         </div>
-                    </div>
-
-                    <div class="card-spec-text">
-                        <p>zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc
-                            zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc
-                            zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc
-                            zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc
-                            zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc zxc</p>
                     </div>
                 </div>
 
+                <h5>Вопрос 3</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img3.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Кто создал Linux?</h5>
+                            <button @click="btnTrue" class="simp-btn">Линус Торвальдс </button>
+                            <button @click="btnFalse" class="simp-btn">Стив Джобс</button>
+                            <button @click="btnFalse" class="simp-btn">Марк Цукенберг</button>
+                        </div>
+                    </div>
+                </div>
 
-                <p class="mt-3">Правильных ответов: {{score}}/10</p>
+                <h5>Вопрос 4</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img4.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Что из этого НЕ верно?</h5>
+                            <button @click="btnFalse" class="simp-btn">Linux имеет открытое ядро</button>
+                            <button @click="btnTrue" class="simp-btn">В Linux все ОС идут с графической оболочки</button>
+                            <button @click="btnFalse" class="simp-btn">Андроид был создан на основе Linux</button>
+                        </div>
+                    </div>
+                </div>
 
+                <h5>Вопрос 5</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img5.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Что такое дистрибутив?</h5>
+                            <button @click="btnFalse" class="simp-btn">Это аналог системы Linux</button>
+                            <button @click="btnTrue" class="simp-btn">ОС созданная на основе ядра Linux</button>
+                            <button @click="btnFalse" class="simp-btn">Дистрибутивом называют Ubuntu</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 6</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img6.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Какой дистрибутив максимально похож на Ubuntu?</h5>
+                            <button @click="btnTrue" class="simp-btn">OS Mint </button>
+                            <button @click="btnFalse" class="simp-btn">Все, за исключением парочки</button>
+                            <button @click="btnFalse" class="simp-btn">Таковых нет</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 7</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img7.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Сколько версий Linux существует?</h5>
+                            <button @click="btnFalse" class="simp-btn">Не более 5</button>
+                            <button @click="btnFalse" class="simp-btn">Не более 15</button>
+                            <button @click="btnTrue" class="simp-btn">Более 50</button>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="show-form" action="">
+                    <div @click="show" v-if="x == 1">
+                        <button class="simp-btn simp-btn_show">Показать результат теста</button>
+                    </div>
+                    <div v-else>
+                        <p class="show-p simp-btn simp-btn_show ">Вы набрали {{score}} из 7 баллов!</p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

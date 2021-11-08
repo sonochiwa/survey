@@ -5,6 +5,7 @@ new Vue({
         isDisabled: true,
         score: 0,
         askNumb: 0,
+        x: 1,
     },
     methods: {
         btnTrue(event) {
@@ -14,6 +15,9 @@ new Vue({
         btnFalse(event) {
             event.target.classList.add('btn-false');
             event.target.classList.add('disabled');
+        },
+        show(event) {
+            this.x += 1;
         },
     }
 })
