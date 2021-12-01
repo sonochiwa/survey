@@ -2,248 +2,236 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Тест</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <div class="logo">КОДИРОВАНИЕ ИНФОРМАЦИИ
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">КОДИРОВАНИЕ ИНФОРМАЦИИ
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="error.html">Другие тесты</a></li>
+                        <li>
+                            <a href="error.html">Обратная связь</a>
+                        </li>
+                        <li>
+                            <a href="error.html">Вход</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="error.html">Другие тесты</a></li>
-            <li>
-              <a href="error.html">Обратная связь</a>
-            </li>
-            <li>
-              <a href="error.html">Вход</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    </header>
+
+    <div class="container mt-3">
+        <div class="container__inner">
+            <div id="app">
+                <h5>Вопрос 1</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img1.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">На какое количество символов идёт свдвиг в шифре Цезаря?</h5>
+                            <button @click="btnFalse" class="simp-btn">2</button>
+                            <button @click="btnTrue" class="simp-btn">3</button>
+                            <button @click="btnFalse" class="simp-btn">4</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 2</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img2.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Из чего состоит азбука Морзе?</h5>
+                            <button @click="btnFalse" class="simp-btn">Тире точки и цифры</button>
+                            <button @click="btnFalse" class="simp-btn">Цифры и буквы</button>
+                            <button @click="btnTrue" class="simp-btn">Тире и точки</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 3</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img3.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Сколько существует методов сжатия информации?</h5>
+                            <button @click="btnFalse" class="simp-btn">1</button>
+                            <button @click="btnTrue" class="simp-btn">2</button>
+                            <button @click="btnFalse" class="simp-btn">3</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 4</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img4.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Какое новое направление появилось в конце 1970-го года?</h5>
+                            <button @click="btnFalse" class="simp-btn">Криптография с примитивным ключом</button>
+                            <button @click="btnTrue" class="simp-btn">Криптография с открытым ключом</button>
+                            <button @click="btnFalse" class="simp-btn">Цифровые подписи</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 5</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img5.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Что является нижним уровнем в иерархии кодирования?</h5>
+                            <button @click="btnFalse" class="simp-btn">Криптография</button>
+                            <button @click="btnTrue" class="simp-btn">Физическое кодирования</button>
+                            <button @click="btnFalse" class="simp-btn">Cжатие данных</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 6</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img6.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">В какой стране шифровальная машина "Энигма" получила наибольшее распространение?
+                            </h5>
+                            <input type="text" @keyup.enter="addMessage2"> Ваш ответ: <strong>{{ message2 }}</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 7</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img7.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Какая машина была создана для расшифровки сообщений, зашифрованных "Энигмой"?
+                            </h5>
+                            <button @click="btnFalse" class="simp-btn">Меркурий</button>
+                            <button @click="btnFalse" class="simp-btn">NEMA</button>
+                            <button @click="btnTrue" class="simp-btn">Turing Bombe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 8</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img8.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Что здесь зашифровано? «Сдцъгхя — кргълх ежесмрз цълхяфв.»</h5>
+                            <button @click="btnFalse" class="simp-btn">Обучать есть дело долга, развлекать же - дело
+                уважения</button>
+                            <button @click="btnTrue" class="simp-btn">Обучать — значит вдвойне учиться</button>
+                            <button @click="btnFalse" class="simp-btn">Желание высказаться почти всегда бывает сильнее, чем желание
+                чему-нибудь научиться</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 9</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img9.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Что здесь зашифровано? « -. .- -.. --- -- -. --- --. --- ..- ---. .. - -..- ... .-.- --..-- ---. - --- -... -.-- --.. -. .- - -..- .... --- - -..- -. . -- -. --- --. --- .-.-.- »</h5>
+                            <button @click="btnTrue" class="simp-btn">Надо много учиться, чтобы знать хоть немного</button>
+                            <button @click="btnFalse" class="simp-btn">Лучше весь век учиться, нежели пребыть незнающим</button>
+                            <button @click="btnFalse" class="simp-btn">Не всякий возраст подходит для школьной учебы</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 10</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img10.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Что такое Цикада 3301?</h5>
+                            <button @click="btnTrue" class="simp-btn">Организация, публикующая загадки высшего уровня в
+                Интернете</button>
+                            <button @click="btnFalse" class="simp-btn">Вид насекомого Цикада</button>
+                            <button @click="btnFalse" class="simp-btn">Компьютерная видеоигра</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 11</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img11.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Что нужно было сделать, чтобы разгадать первую загадку?</h5>
+                            <button @click="btnTrue" class="simp-btn">Открыть изображение в текстовом редакторе</button>
+                            <button @click="btnFalse" class="simp-btn">Открыть изображение в графическом редакторе и высветлить
+                изображение</button>
+                            <button @click="btnFalse" class="simp-btn">Перевести то, что написано в загадке</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 12</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img13.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Чем отличается шифр Rot1 от шифра Цезаря? </h5>
+                            <button @click="btnTrue" class="simp-btn">Количеством символов при сдвиге</button>
+                            <button @click="btnFalse" class="simp-btn">В шифре Rot1 шифр преобразуется в числа</button>
+                            <button @click="btnFalse" class="simp-btn">Шифр Цезаря является полиалфавитным шифром</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 13</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img14.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">«14443214464514462514464514463314630142726» В каком виде кода зашифровано слово «Знание!»
+                            </h5>
+                            <button @click="btnFalse" class="simp-btn">Двоичный код</button>
+                            <button @click="btnTrue" class="simp-btn">Десятичный код</button>
+                            <button @click="btnFalse" class="simp-btn">Шестнадцатеричный код</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Вопрос 14</h5>
+                <div class="card-wrapper">
+                    <div class="card mb-3">
+                        <img src="images/img15.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">На какое число нужно умножить каждый разряд двоичного числа, чтобы перевести его в десятичную систему счисления?</h5>
+                            <input type="text" @keyup.enter="addMessage"> Ваш ответ: <strong>{{ message }}</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="show-form" action="">
+                    <div @click="show" v-if="x == 1">
+                        <button class="simp-btn simp-btn_show">Показать результат теста</button>
+                    </div>
+                    <div v-else>
+                        <p class="show-p simp-btn simp-btn_show ">Вы набрали {{score}} из 14 баллов!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </header>
-
-  <div class="container mt-3">
-    <div class="container__inner">
-      <div id="app">
-        <h5>Вопрос 1</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img1.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">На какое количество символов идёт свдвиг в шифре Цезаря?</h5>
-              <button @click="btnFalse" class="simp-btn">2</button>
-              <button @click="btnTrue" class="simp-btn">3</button>
-              <button @click="btnFalse" class="simp-btn">4</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 2</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img2.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Из чего состоит азбука Морзе?</h5>
-              <button @click="btnFalse" class="simp-btn">Тире точки и цифры</button>
-              <button @click="btnFalse" class="simp-btn">Цифры и буквы</button>
-              <button @click="btnTrue" class="simp-btn">Тире и точки</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 3</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img3.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Сколько существует методов сжатия информации?</h5>
-              <button @click="btnFalse" class="simp-btn">1</button>
-              <button @click="btnTrue" class="simp-btn">2</button>
-              <button @click="btnFalse" class="simp-btn">3</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 4</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img4.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Какое новое направление появилось в конце 1970-го года?</h5>
-              <button @click="btnFalse" class="simp-btn">Криптография с примитивным ключом</button>
-              <button @click="btnTrue" class="simp-btn">Криптография с открытым ключом</button>
-              <button @click="btnFalse" class="simp-btn">Цифровые подписи</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 5</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img5.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Что является нижним уровнем в иерархии кодирования?</h5>
-              <button @click="btnFalse" class="simp-btn">Криптография</button>
-              <button @click="btnTrue" class="simp-btn">Физическое кодирования</button>
-              <button @click="btnFalse" class="simp-btn">Cжатие данных</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 6</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img7.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">В какой стране шифровальная машина "Энигма" получила наибольшее
-                распространение?</h5>
-              <button @click="btnFalse" class="simp-btn">Россия</button>
-              <button @click="btnFalse" class="simp-btn">Франция</button>
-              <button @click="btnTrue" class="simp-btn">Германия</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 7</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Какая машина была создана для расшифровки сообщений, зашифрованных
-                "Энигмой"?</h5>
-              <button @click="btnFalse" class="simp-btn">Меркурий</button>
-              <button @click="btnFalse" class="simp-btn">NEMA</button>
-              <button @click="btnTrue" class="simp-btn">Turing Bombe</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 8</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Что здесь зашифровано? «Сдцъгхя — кргълх ежесмрз цълхяфв.» </h5>
-              <button @click="btnFalse" class="simp-btn">Обучать есть дело долга, развлекать же - дело уважения.</button>
-              <button @click="btnTrue" class="simp-btn">Обучать — значит вдвойне учиться.</button>
-              <button @click="btnFalse" class="simp-btn">Желание высказаться почти всегда бывает сильнее, чем желание чему-нибудь научиться.</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 9</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Что здесь зашифровано? « -. .- -.. --- -- -. --- --. ---  ..- ---. .. - -..- ... .-.- --..--  ---. - --- -... -.--  --.. -. .- - -..-  .... --- - -..-  -. . -- -. --- --. --- .-.-.- »</h5>
-              <button @click="btnTrue" class="simp-btn">Надо много учиться, чтобы знать хоть немного.</button>
-              <button @click="btnFalse" class="simp-btn">Лучше весь век учиться, нежели пребыть незнающим.</button>
-              <button @click="btnFalse" class="simp-btn">Не всякий возраст подходит для школьной учебы.</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 10</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Что такое Цикада 3301?</h5>
-              <button @click="btnTrue" class="simp-btn">Организация, публикующая загадки высшего уровня в Интернете.</button>
-              <button @click="btnFalse" class="simp-btn">Вид насекомого Цикада.</button>
-              <button @click="btnFalse" class="simp-btn">Компьютерная видеоигра.</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 11</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Что нужно было сделать, чтобы разгадать первую загадку?</h5>
-              <button @click="btnTrue" class="simp-btn">Открыть изображение в текстовом редакторе. </button>
-              <button @click="btnFalse" class="simp-btn">Открыть изображение в графическом редакторе и высветлить изображение.</button>
-              <button @click="btnFalse" class="simp-btn">???</button>
-            </div>
-          </div>
-        </div>
-        
-        <h5>Вопрос 12</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Чем отличается симметричное от асимметричного шифрования?</h5>
-              <button @click="btnTrue" class="simp-btn">Открыть изображение в текстовом редакторе.</button>
-              <button @click="btnFalse" class="simp-btn">Открыть изображение в графическом редакторе и высветлить изображение.</button>
-              <button @click="btnFalse" class="simp-btn">???</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 13</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Чем отличается шифр Rot1 от шифра Цезаря? </h5>
-              <button @click="btnTrue" class="simp-btn">Количеством символов при сдвиге</button>
-              <button @click="btnFalse" class="simp-btn">В шифре Rot1 шифр преобразуется в числа.</button>
-              <button @click="btnFalse" class="simp-btn">Шифр Цезаря является полиалфавитным шифром.</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 14</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">«144432144645144625144645144633144630142726» В каком виде кода зашифровано слово «Знание!»</h5>
-              <button @click="btnFalse" class="simp-btn">Двоичный код</button>
-              <button @click="btnTrue" class="simp-btn">Десятичный код</button>
-              <button @click="btnFalse" class="simp-btn">Шестнадцатеричный код.</button>
-            </div>
-          </div>
-        </div>
-
-        <h5>Вопрос 15</h5>
-        <div class="card-wrapper">
-          <div class="card mb-3">
-            <img src="images/img6.png" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">Как перевести двоичное число в десятичную систему счисления?</h5>
-              <button @click="btnTrue" class="simp-btn">Каждый разряд умножить на 2 в степени n-1</button>
-              <button @click="btnFalse" class="simp-btn">Каждый разряд умножить на 3 в степени  n-1</button>
-              <button @click="btnFalse" class="simp-btn">Каждый разряд умножить на 4 в степени n-1</button>
-            </div>
-          </div>
-        </div>
-
-        <form class="show-form" action="">
-          <div @click="show" v-if="x == 1">
-            <button class="simp-btn simp-btn_show">Показать результат теста</button>
-          </div>
-          <div v-else>
-            <p class="show-p simp-btn simp-btn_show ">Вы набрали {{score}} из 15 баллов!</p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-  <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
